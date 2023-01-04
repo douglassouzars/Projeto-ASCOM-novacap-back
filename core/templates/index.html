@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' %}" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--links-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,8 +22,9 @@
     <link href="./bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="./bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./bootstrap-4.0.0-dist/js/jquery-3.6.1.min.js"></script>
-
-
+    <script type="text/javascript" src="{% static 'bootstrap-4.0.0-dist/js/jquery-3.6.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bootstrap-4.0.0-dist/js/bootstrap.min.js' %}"></script>
+    <link href="{% static 'bootstrap-4.0.0-dist/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
 
     <!--Css-->
     <link rel="stylesheet" href="css/styless.css">
@@ -68,7 +70,7 @@
 
 
     <!--Navbar laranja e imagem-->
-    <div id="starter" class="view3 intro hm-purple-light " style="z-index: 2;">
+    <div id="starter" class="view3 intro hm-purple-light" style="background: url('{% static 'images/Imagens_para_construcao_da_Intra__2_.jpeg' %}') no-repeat center center; background-size: cover;">
         <img class="img-fluid" id="LogoIp" src="{% static 'images/adesivo padrão 45x19-ai.svg' alt='' %}"/>
         <nav id='menu'>
             <input type='checkbox' id='responsive-menu' onclick='updatemenu()' style="z-index: 1;"><label></label>
@@ -108,7 +110,7 @@
                     <a href="#">Veja Mais >>></a>
             </div>
             <div class="col-sm" id="cardDir">
-                <img src="./img/DIR-FINANCEIRA-ai.svg" alt="">
+                <img src="{% static 'images/DIR-FINANCEIRA-ai.svg' alt='' %}"/>
                 <h2>Diretoria Financeira</h2>
                 <p style="margin-bottom: 4rem; margin-top: 0.5rem;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quas ducimus? Velit, ipsum quasi
                     quis dignissimos voluptatum, doloribus obcaecati unde alias perferendis hic voluptates impedit iusto
@@ -116,7 +118,7 @@
                     <a href="#">Veja Mais >>></a>
             </div>
             <div class="col-sm" id="cardDir">
-                <img src="./img/DIR-EDIFICACOES-ai.svg" alt="">
+                <img src="{% static 'images/DIR-EDIFICACOES-ai.svg' alt='' %}"/>
                 <h2>Diretoria de Edificações</h2>
                 <p style="margin-bottom: 4rem; margin-top: 0.5rem;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quas ducimus? Velit, ipsum quasi
                     quis dignissimos voluptatum, doloribus obcaecati unde alias perferendis hic voluptates impedit iusto
@@ -124,7 +126,7 @@
                     <a href="#">Veja Mais >>></a>
             </div>
             <div class="col-sm" id="cardDir">
-                <img src="./img/DIR-URBANIZACAO-ai.svg" alt="">
+                <img src="{% static 'images/DIR-URBANIZACAO-ai.svg' alt='' %}"/>
                 <h2>Diretoria de Urbanização</h2>
                 <p style="margin-bottom: 4rem; margin-top: 0.5rem;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quas ducimus? Velit, ipsum quasi
                     quis dignissimos voluptatum, doloribus obcaecati unde alias perferendis hic voluptates impedit iusto
@@ -132,7 +134,7 @@
                     <a href="#">Veja Mais >>></a>
             </div>
             <div class="col-sm" id="cardDir">
-                <img src="./img/DIR-JURIDICA-ai.svg" alt="">
+                <img src="{% static 'images/DIR-JURIDICA-ai.svg' alt='' %}"/>
                 <h2>Diretoria Jurídica</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quas ducimus? Velit, ipsum quasi
                     quis dignissimos voluptatum, doloribus obcaecati unde alias perferendis hic voluptates impedit iusto
@@ -143,7 +145,7 @@
 
         <div class="row">
             <div class="col-auto mr-auto classeT" id="segcard">
-                <img src="./img/NORMASGERAIS-ai.svg" alt="">
+                <img src="{% static 'images/NORMASGERAIS-ai.svg' alt='' %}"/>
                 <h2>Normas Gerais</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quas ducimus? Velit, ipsum quasi
                     quis dignissimos voluptatum, doloribus obcaecati unde alias perferendis hic voluptates impedit iusto
@@ -151,7 +153,7 @@
                 <a href="#">Veja Mais >>></a>
             </div>
             <div class="col-auto mr-auto classeT" id="segcard">
-                <img src="./img/SECULLUMPONTOELETRONICO-ai.svg" alt="">
+                <img src="{% static 'images/SECULLUMPONTOELETRONICO-ai.svg' alt='' %}"/>
                 <h2>Scrullum Ponto Eletrônico</h2>
                 <p style="margin-bottom: 4rem; margin-top: 0.5rem;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quas ducimus? Velit, ipsum quasi
                     quis dignissimos voluptatum, doloribus obcaecati unde alias perferendis hic voluptates impedit iusto
@@ -159,7 +161,7 @@
                     <a href="#">Veja Mais >>></a>
             </div>
             <div class="col-auto mr-auto classeT" id="segcard">
-                <img src="./img/DEGEP-DRH-ai.svg" alt="">
+                <img src="{% static 'images/DEGEP-DRH-ai.svg' alt='' %}"/>
                 <h2>DIGEP- DRH</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quas ducimus? Velit, ipsum quasi
                     quis dignissimos voluptatum, doloribus obcaecati unde alias perferendis hic voluptates impedit iusto
@@ -169,7 +171,7 @@
             <div id="AP" class="col-auto mr-auto classeT" id="segcard">
                 <br>
                 <div id="circulo">
-                <img src="./img/ACOESEPROJETOS-ai.svg" alt="">
+                <img src="{% static 'images/ACOESEPROJETOS-ai.svg' alt='' %}"/>
                 </div>
                 <br>
                 <br>
@@ -183,10 +185,11 @@
                     <a class="text-white" href="#">Veja Mais >>></a>
             </div>
 
-            <div id="DaNovacap" class="col-auto mr-auto classeT">
+            <div id="DaNovacap" style="background-image: url('{% static 'images/Novacap65.png' %}');" class="col-auto mr-auto classeT">
+
                 <div class="button">
                     DOWNLOAD
-                    <img id="download" src="./img/DOWNLOAD (1)-ai.svg" alt="">
+                    <img id="download" src="{% static 'images/DOWNLOAD (1)-ai.svg' alt='' %}"/>
                     <p>Lorem ipsum dolor sit amet clit nam? </p>
                 </div>
             </div>
@@ -202,18 +205,18 @@
     <section class="container-fluid" id="containerFluid__cards">
         <div class="row">
             <div class="col-sm cardaviso" id="cardDir2">
-                <img src="./img/avisoLegal.png" alt="">
+                <img src="{% static 'images/avisoLegal.png' alt='' %}"/>
 
                 <p id="p1"><b>NOVACAP instala travessia segura no Sol Nascente</b></p>
                 <p id="p2">Parceria entre DER e NOVACAP constrói passarela na região</p>
             </div>
             <div class="col-sm cardaviso" id="cardDir2">
-                <img src="./img/avisoLegal.png" alt="">
+                <img src="{% static 'images/avisoLegal.png' alt='' %}"/>
                 <p id="p1"><b>NOVACAP instala travessia segura no Sol Nascente</b></p>
                 <p id="p2">Parceria entre DER e NOVACAP constrói passarela na região</p>
             </div>
             <div class="col-sm cardaviso" id="cardDir2">
-                <img src="./img/avisoLegal.png" alt="">
+                <img src="{% static 'images/avisoLegal.png' alt='' %}"/>
                 <p id="p1"><b>NOVACAP instala travessia segura no Sol Nascente</b></p>
                 <p id="p2">Parceria entre DER e NOVACAP constrói passarela na região</p>
             </div>
@@ -222,17 +225,17 @@
 <br><br>
         <div class="row">
             <div class="col-sm cardaviso" id="cardDir2">
-                <img src="./img/avisoLegal.png" alt="">
+                <img src="{% static 'images/avisoLegal.png' alt='' %}"/>
                 <p id="p1">NOVACAP instala travessia segura no Sol Nascente</p>
                 <p id="p2">Parceria entre DER e NOVACAP constrói passarela na região</p>
             </div>
             <div class="col-sm cardaviso" id="cardDir2">
-                <img src="./img/avisoLegal.png" alt="">
+                <img src="{% static 'images/avisoLegal.png' alt='' %}"/>
                 <p id="p1">NOVACAP instala travessia segura no Sol Nascente</p>
                 <p id="p2">Parceria entre DER e NOVACAP constrói passarela na região</p>
             </div>
             <div class="col-sm cardaviso" id="cardDir2">
-                <img src="./img/avisoLegal.png" alt="">
+                <img src="{% static 'images/avisoLegal.png' alt='' %}"/>
                 <p id="p1">NOVACAP instala travessia segura no Sol Nascente</p>
                 <p id="p2">Parceria entre DER e NOVACAP constrói passarela na região</p>
             </div>
@@ -321,7 +324,7 @@
 <section>
   <div class="row row-cols-3">
     <div class="noticiaCol">
-        <img src="./img/caminhao.png" alt="">
+        <img src="{% static 'images/caminhao.png' alt='' %}"/>
         <div class="infornoticia">
             <p id="noticiaData">   june 30,2018 </p><br><br>
             <h3><b>Recuperação do Anel Viário</b></h3>
@@ -330,7 +333,7 @@
         </div>
     </div>
     <div class="noticiaCol">
-        <img src="./img/caminhao.png" alt="">
+        <img src="{% static 'images/caminhao.png' alt='' %}"/>
         <div class="infornoticia">
             <p id="noticiaData"> june 30,2018 </p><br><br>
             <h3><b>Recuperação do Anel Viário</b></h3>
@@ -339,7 +342,7 @@
         </div>
     </div>
     <div class="noticiaCol">
-        <img src="./img/caminhao.png" alt="">
+        <img src="{% static 'images/caminhao.png' alt='' %}"/>
         <div class="infornoticia">
             <p id="noticiaData">june 30,2018 </p><br><br>
             <h3><b>Recuperação do Anel Viário</b></h3>
@@ -351,7 +354,7 @@
 <br><br><br>
 <div class="row row-cols-3">
     <div class="noticiaCol">
-        <img src="./img/caminhao.png" alt="">
+        <img src="{% static 'images/caminhao.png' alt='' %}"/>
         <div class="infornoticia">
             <p id="noticiaData">june 30,2018 </p><br><br>
             <h3><b>Recuperação do Anel Viário</b></h3>
@@ -360,7 +363,7 @@
         </div>
     </div>
     <div class="noticiaCol">
-        <img src="./img/caminhao.png" alt="">
+        <img src="{% static 'images/caminhao.png' alt='' %}"/>
         <div class="infornoticia">
             <p id="noticiaData">june 30,2018 </p><br><br>
             <h3><b>Recuperação do Anel Viário</b></h3>
@@ -369,7 +372,7 @@
         </div>
     </div>
     <div class="noticiaCol">
-        <img src="./img/caminhao.png" alt="">
+        <img src="{% static 'images/caminhao.png' alt='' %}"/>
             <div class="infornoticia">
                 <p id="noticiaData">june 30,2018 </p><br><br>
                 <h3><b>Recuperação do Anel Viário</b></h3>
@@ -390,13 +393,13 @@
     <div class="divblue">testeeeeeeeeee</div>
     <section id="tvNovacap">
         <div id="tvTitulo">
-            <img src="./img/TV.png" alt="Logo TV NOVACAP">
+            <img src="{% static 'images/TV.png' alt='Logo TV NOVACAP' %}"/>
             <h1>NOVACAP</h1>
         </div>
         <p id="tvSub">Saiba todas as obras e ações que estão acontecendo no Distrito Federal</p><br><br><br><br>
         <!-- carrossel -->
         <br><br><br><br><br><br><br><br><br><br>
-        <script src="js/car.js"></script>
+        <script src="{% static 'js/car.js' %}"></script>
         <div class="containerpla">
             <div id="planet1" class="planet">
                 <iframe src="https://www.youtube.com/watch?v=15kxrEVpt6k"></iframe>
@@ -415,20 +418,21 @@
             </div>
         </div>
         <script src="js/car.js"></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
+
+        <script src="{% static 'Planet/TweenMax.min.js.js' %}"></script>
 
     <!--Footer-->
     <section id="footerContatos">
         <div id="ouvidoria" class="flex-itens">
-            <a href="http://painel.ouv.df.gov.br/dashboard"><img id="ouvlogo" src="./img/OUVIDORIA-ai.svg" alt=""></a>
+            <a href="http://painel.ouv.df.gov.br/dashboard"><img id="ouvlogo" src="{% static 'images/OUVIDORIA-ai.svg' alt='' %}"/></a>
 
         </div>
         <div id="icOuvidoria">
             <div id="cluster__1" class="flex-itens">
-                <a href="https://www.ouv.df.gov.br/#/registro-manifestacao/1/Den%C3%BAncia/true"><img id="denuncia" src="./img/DENUNCIA-ai.svg" alt=""></a>
-                <a href="https://www.ouv.df.gov.br/#/registro-manifestacao/2/Reclama%C3%A7%C3%A3o/true"><img id="reclamacao" src="./img/RECLAMAÇÃO-ai.svg" alt=""></a>
-                <a href="https://www.ouv.df.gov.br/#/registro-manifestacao/4/Sugest%C3%A3o/false"><img id="sugest" src="./img/SUGESTAO-ai.svg" alt=""></a>
-                <a href="https://www.ouv.df.gov.br/#/registro-manifestacao/6/Elogio/false"><img id="elogio" src="./img/ELOGIO-ai.svg" alt=""></a>
+                <a href="https://www.ouv.df.gov.br/#/registro-manifestacao/1/Den%C3%BAncia/true"><img id="denuncia" src="{% static 'images/DENUNCIA-ai.svg' alt='' %}"/></a>
+                <a href="https://www.ouv.df.gov.br/#/registro-manifestacao/2/Reclama%C3%A7%C3%A3o/true"><img id="reclamacao" src="{% static 'images/RECLAMAÇÃO-ai.svg' alt='' %}"/></a>
+                <a href="https://www.ouv.df.gov.br/#/registro-manifestacao/4/Sugest%C3%A3o/false"><img id="sugest" src="{% static 'images/SUGESTAO-ai.svg' alt='' %}"/></a>
+                <a href="https://www.ouv.df.gov.br/#/registro-manifestacao/6/Elogio/false"><img id="elogio" src="{% static 'images/ELOGIO-ai.svg' alt='' %}"/></a>
             </div>
             <hr id="pontilhado">
             </hr>
@@ -439,21 +443,21 @@
 
             <div id="cluster__2" class="flex-itens">
                 <div class="linha-vertical1">
-                    <a href="https://www.ouv.df.gov.br/#/"> <img id="ouvid" src="./img/SITEOUVIDORIA-ai.svg" alt=""></a>
+                    <a href="https://www.ouv.df.gov.br/#/"> <img id="ouvid" src="{% static 'images/SITEOUVIDORIA-ai.svg' alt='' %}"/></a>
                 </div>
 
                 <div class="linha-vertical">
-                    <a href="#"><img id="cDenuncia" src="./img/CANALDEDENUNCIAS-ai.svg" alt=""></a>
+                    <a href="#"><img id="cDenuncia" src="{% static 'images/CANALDEDENUNCIAS-ai.svg' alt='' %}"/></a>
                 </div>
                 <div class="linha-vertical">
-                    <a href="https://ouvidoria.df.gov.br/carta-servico-cidadao/"><img id="carta" src="./img/CARTADESERVICOS-ai.svg" alt=""></a>
+                    <a href="https://ouvidoria.df.gov.br/carta-servico-cidadao/"><img id="carta" src="{% static 'images/CARTADESERVICOS-ai.svg' alt='' %}"/></a>
                 </div>
 
                 <div class="linha-vertical">
-                    <a href="https://www.df.gov.br/category/acesso-a-informacao/"><img id="info" src="./img/ACESSOAINFORMACAO (1)-ai.svg" alt=""></a>
+                    <a href="https://www.df.gov.br/category/acesso-a-informacao/"><img id="info" src="{% static 'images/ACESSOAINFORMACAO (1)-ai.svg' alt=''%}"/></a>
                 </div>
                 <div class="linha-vertical">
-                    <a href="#"><img id="info" src="./img/SISTEMAINTEGRADO-ai.svg" alt=""></a>
+                    <a href="#"><img id="info" src="{% static 'images/SISTEMAINTEGRADO-ai.svg' alt='' %}"/></a>
                 </div>
             </div>
         </div>
@@ -461,11 +465,11 @@
 
     <div class="">
         <footer class="sticky-footer">
-        <img class="img-fluid" id="imgLogoF" src="img/adesivo padrão 45x19-ai.svg">
+        <img class="img-fluid" id="imgLogoF" src="{% static 'images/adesivo padrão 45x19-ai.svg' %}"/>
         <h1>
             <p> Companhia Urbanizadora da Nova Capital do Brasil Governo do Distrito Federal</p>
             <p>Setor de Áreas Públicas - Lote B - Cep: 71.215-000 Telefone: 3403-2300</p>
-            <img id="waveFooter" src="./img/wave-n-svg.svg" alt="">
+            <img id="waveFooter" src="{% static 'images/wave-n-svg.svg' alt='' %}"/>
         </h1>
         </footer>
     </div>
